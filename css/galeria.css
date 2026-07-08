@@ -1,0 +1,292 @@
+/* =============================================
+   GALERIA.CSS — Estilos para la página Galería
+   ============================================= */
+
+/* ---------- HERO ---------- */
+.galeria-hero {
+    position: relative;
+    background-color: var(--orange1) !important;
+    min-height: 38vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-leaf {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    width: 220px;
+    opacity: 0.85;
+    pointer-events: none;
+}
+
+.hero-leaf img {
+    width: 100%;
+    background-color: transparent;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 3rem 1rem 4.5rem;
+    z-index: 1;
+}
+
+/* Todos los hijos del hero son transparentes para mostrar el fondo naranja */
+section.galeria-hero * {
+    background-color: transparent !important;
+}
+
+.hero-camera {
+    margin-bottom: 0.75rem;
+}
+
+.hero-camera img {
+    width: 90px;
+    height: auto;
+}
+
+.hero-title {
+    font-family: 'Caveat', cursive;
+    font-size: clamp(3rem, 6vw, 5rem);
+    color: white;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+
+.hero-subtitle {
+    font-family: 'Lato', sans-serif;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    color: white;
+    font-weight: 300;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.hero-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    line-height: 0;
+    pointer-events: none;
+    background-color: white;
+}
+
+.hero-wave svg {
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+}
+
+/* ---------- FILTROS ---------- */
+.galeria-filtros {
+    padding: 2.5rem 1rem 1.5rem;
+}
+
+.filtros-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: flex-start;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.filtro-btn {
+    background-color: transparent;
+    border: 2px solid var(--orange1);
+    border-radius: 50px;
+    padding: 0.4rem 1.4rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.filtro-btn:hover {
+    background-color: var(--orange1);
+    color: white;
+}
+
+.filtro-btn.active {
+    background-color: var(--orange1);
+    color: white;
+    font-weight: 700;
+}
+
+/* ---------- GRID DE FOTOS ---------- */
+.galeria-grid {
+    padding: 0.5rem 2rem 2rem;
+}
+
+.foto-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.foto-item {
+    border-radius: 20px;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.foto-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+
+.foto-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    background-color: transparent;
+    transition: filter 0.25s ease;
+}
+
+.foto-item:hover img {
+    filter: brightness(1.05);
+}
+
+/* Foto oculta por filtro */
+.foto-item.hidden {
+    display: none;
+}
+
+/* ---------- FRASE ---------- */
+.galeria-frase {
+    padding: 4rem 2rem 5rem;
+    text-align: center;
+}
+
+.frase-text {
+    font-family: 'Caveat', cursive;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    color: #2a1a0e;
+    font-weight: 700;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    line-height: 1.3;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    background-color: #4b512c;
+    padding: 3rem 0;
+}
+
+footer * {
+    background-color: transparent;
+    color: var(--white);
+}
+
+.footer-inner {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: start;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    gap: 2rem;
+}
+
+.footer-logo img {
+    max-width: 130px;
+    height: auto;
+}
+
+.footer-info p {
+    margin: 0.15rem 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+}
+
+.footer-info a {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+.footer-contactos h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    color: var(--white);
+    transition: opacity 0.2s ease;
+}
+
+.social-icon:hover {
+    opacity: 0.75;
+}
+
+.social-icon svg {
+    display: block;
+}
+
+/* ---------- BOTÓN HEADER ---------- */
+.btn-escuela {
+    background-color: var(--orange1);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.4rem 1.1rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: filter 0.2s ease;
+}
+
+.btn-escuela:hover {
+    filter: brightness(0.88);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+    .foto-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .foto-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .filtros-container {
+        justify-content: center;
+    }
+}
+.hero-wave{
+    background-color: white !important;
+}
+@media (max-width: 560px) {
+  .hero { height: 380px; } /* antes 320px */
+}

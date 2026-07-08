@@ -1,0 +1,179 @@
+:root{
+    --altura_cabecera: 10vh;
+    --peso_letra: 300;
+
+    /* Colores */
+    --orange1: rgb(205, 87, 19);
+    --orange2: rgb(205, 87, 19);
+    --beish: rgb(255, 217, 167);
+    --white: rgb(255, 235, 208);
+    --green: rgb(26, 83, 4);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--beish);
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 2fr 5fr 3fr;
+}
+
+
+
+
+
+.cont_boton_escuela button{
+    background-color: var(--orange1);
+}
+
+.cont_boton_escuela{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont_enlaces_cabecera{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.index_option{
+    font-weight: 300;
+    font-size: 16px;
+    margin: 0 1rem;
+}
+
+.selected a{
+    color: var(--orange1); 
+}
+
+.cont_logo_cabecera{
+    height: 10vh;
+}
+
+.cont_logo_cabecera img{
+    height: 100%;
+}
+
+.full_w_img{
+    width: 100%;
+}
+
+.cont_members{
+    padding: 1rem;
+}
+
+.cont_members h2{
+    margin-bottom: 10rem;
+}
+
+.section_comunity p{
+    text-align: left;
+}
+
+
+
+
+.cont_map{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 3rem 0;
+    background-image: url(../src/img/imagen\ muestra3.png);
+    background-repeat: none;
+    background-size: cover;
+    height: 30rem;
+}
+
+.cont_map *{
+    background-color: transparent;
+}
+
+.cont_text_map{
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+
+
+
+
+.cont_voices{
+    background-color: var(--orange1);
+    padding: 2rem 3rem 12rem 3rem;
+}
+
+.cont_voices h2{
+    margin-bottom: 3rem;
+}
+
+.cont_voices *{
+    background-color: transparent;
+    color: var(--white);
+}
+
+.voice{
+    border-radius: 1rem;
+    border: 2px solid var(--beish);
+    width: 14rem;
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: var(--green);
+    padding: 3rem 0;
+}
+
+footer *{
+    background-color: transparent;
+    color: var(--white);
+}
+
+
+.center_items{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn{
+    background-color: var(--orange1);
+    border-radius: 5px;
+    padding: 0.3rem;
+}
+
+p{
+    line-height: 2rem;
+}
+
+.bg_green{
+    background-color: var(--green);
+    color: var(--beish);
+}

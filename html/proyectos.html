@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyectos — Escuela Rural N°940</title>
+
+  <!-- Tabler Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="../css/proyectos.css" />
+</head>
+<body>
+
+<nav>
+  <div class="logo">
+    <img src="../src/img/logo.png" alt="Escuela Rural N°940 — Educación para las Primaveras" />
+  </div>
+
+  <div class="nav-links">
+    <a href="../html/inicio.html">Inicio</a>
+    <a href="../html/galeria.html">Galería</a>
+    <a href="proyectos.html" class="active">Proyectos</a>
+    <a href="../html/comunidad.html">Comunidad</a>
+    <a href="../html/inicio.html#contacto">Contacto</a>
+  </div>
+
+  <button class="nav-btn">Ver más</button>
+
+  <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<!-- Menú móvil -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="../html/inicio.html">Inicio</a>
+  <a href="../html/galeria.html">Galería</a>
+  <a href="proyectos.html" class="active">Proyectos</a>
+  <a href="../html/comunidad.html">Comunidad</a>
+  <a href="../html/inicio.html#contacto">Contacto</a>
+  <button class="nav-btn">Ver más</button>
+</div>
+
+<div class="hero">
+  <img
+    class="hero-img"
+    src="../src/img/image 9.png"
+    alt="Estudiantes trabajando en la huerta escolar"
+  />
+  <div class="hero-overlay"></div>
+  <div class="brush-top"></div>
+  <div class="brush-bot"></div>
+
+  <div class="hero-text">
+    <h1>Proyectos</h1>
+    <div class="hero-sub">Aprender haciendo, transformar juntos</div>
+    <p>
+      Nuestros proyectos nacen de la realidad del territorio y de los sueños
+      de nuestra comunidad. Educación, arte, trabajo y manualidad se
+      encuentran cada día en nuestra escuela.
+    </p>
+  </div>
+
+</div>
+
+<div class="section-head">
+  <h2>Proyectos que nos transforman</h2>
+  <div class="underline"></div>
+</div>
+
+<div class="filter-bar">
+  <button class="filter-btn active" data-filter="all">Todos</button>
+  <button class="filter-btn" data-filter="agro">Agroecología</button>
+  <button class="filter-btn" data-filter="arte">Arte y Cultura</button>
+  <button class="filter-btn" data-filter="comun">Comunidad</button>
+</div>
+
+<div class="cards-grid" id="cards-grid">
+
+  <!-- Tarjeta 1 -->
+  <div class="card"
+    data-category="agro"
+    data-title="Cooperativa Agroecológica"
+    data-tag="agro"
+    data-img="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=600&q=70"
+    data-desc="La cooperativa agroecológica reúne a familias y estudiantes en el trabajo colectivo de la tierra. Se cultivan hortalizas, hierbas medicinales y frutas de estación siguiendo principios ecológicos, sin agroquímicos, recuperando saberes ancestrales del territorio misionero."
+  >
+    <div class="card-img-wrap">
+      <img class="card-img" src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=600&q=70" alt="Cooperativa Agroecológica" />
+      <div class="card-badge badge-green" aria-hidden="true">
+        <img class="leaf2" src="../src/img/leaf.png" alt="" aria-hidden="true" />
+      </div>
+    </div>
+    <div class="card-body">
+      <span class="card-tag tag-agro">Agroecología</span>
+      <h3>Cooperativa Agroecológica</h3>
+      <p>Cultivo colectivo de hortalizas y hierbas medicinales siguiendo principios ecológicos y saberes ancestrales del territorio.</p>
+      <a class="card-link" href="#">Ver mas</a>
+    </div>
+  </div>
+
+  <!-- Tarjeta 2 -->
+  <div class="card"
+    data-category="arte"
+    data-title="Taller de Arte y Expresión"
+    data-tag="arte"
+    data-img="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=600&q=70"
+    data-desc="El taller de arte y expresión es un espacio donde los estudiantes exploran la pintura, la cerámica y las artesanías tradicionales de Misiones. Los trabajos se exhiben en ferias comunitarias y eventos culturales locales, fortaleciendo la identidad regional."
+  >
+    <div class="card-img-wrap">
+      <img class="card-img" src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=600&q=70" alt="Taller de Arte y Expresión" />
+      <div class="card-badge badge-red" aria-hidden="true">
+        <img class="leaf2" src="../src/img/leaf.png" alt="" aria-hidden="true" />
+      </div>
+    </div>
+    <div class="card-body">
+      <span class="card-tag tag-arte">Arte y Cultura</span>
+      <h3>Taller de Arte y Expresión</h3>
+      <p>Pintura, cerámica y artesanías tradicionales de Misiones. Los trabajos se exhiben en ferias y eventos culturales locales.</p>
+      <a class="card-link" href="#">Ver mas</a>
+    </div>
+  </div>
+
+  <!-- Tarjeta 3 -->
+  <div class="card"
+    data-category="comun"
+    data-title="Red Comunitaria de Salud"
+    data-tag="comun"
+    data-img="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=70"
+    data-desc="La red comunitaria de salud conecta a la escuela con las familias del paraje para promover la prevención y el cuidado colectivo. Estudiantes de los últimos años participan en jornadas de salud, talleres de nutrición y acompañamiento a adultos mayores."
+  >
+    <div class="card-img-wrap">
+      <img class="card-img" src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=70" alt="Red Comunitaria de Salud" />
+      <div class="card-badge badge-green" aria-hidden="true">
+        <img class="leaf2" src="../src/img/leaf.png" alt="" aria-hidden="true" />
+      </div>
+    </div>
+    <div class="card-body">
+      <span class="card-tag tag-comun">Comunidad</span>
+      <h3>Red Comunitaria de Salud</h3>
+      <p>Jornadas de salud, talleres de nutrición y acompañamiento a adultos mayores junto a familias del paraje San Ramón.</p>
+      <a class="card-link" href="#">Ver mas</a>
+    </div>
+  </div>
+
+  <!-- Tarjeta 4 -->
+  <div class="card"
+    data-category="agro"
+    data-title="Huerta Escolar Sustentable"
+    data-tag="agro"
+    data-img="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=600&q=70"
+    data-desc="La huerta escolar es el corazón productivo de la escuela. Cada grado tiene su parcela y los estudiantes aprenden desde la siembra hasta la cosecha. Los alimentos producidos complementan el comedor escolar y el excedente se distribuye entre las familias."
+  >
+    <div class="card-img-wrap">
+      <img class="card-img" src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=600&q=70" alt="Huerta Escolar Sustentable" />
+      <div class="card-badge badge-red" aria-hidden="true">
+        <img class="leaf2" src="../src/img/leaf.png" alt="" aria-hidden="true" />
+      </div>
+    </div>
+    <div class="card-body">
+      <span class="card-tag tag-agro">Agroecología</span>
+      <h3>Huerta Escolar Sustentable</h3>
+      <p>De la siembra a la cosecha: los alimentos complementan el comedor escolar y el excedente se distribuye entre familias.</p>
+      <a class="card-link" href="#">Ver mas</a>
+    </div>
+  </div>
+
+  <!-- Tarjeta 5 -->
+  <div class="card"
+    data-category="arte"
+    data-title="Música y Tradición"
+    data-tag="arte"
+    data-img="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&q=70"
+    data-desc="El proyecto de música y tradición recupera ritmos y canciones folclóricas del nordeste argentino. Los estudiantes aprenden a tocar instrumentos típicos, forman un coro y participan en festivales regionales, preservando el patrimonio cultural de Misiones."
+  >
+    <div class="card-img-wrap">
+      <img class="card-img" src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&q=70" alt="Música y Tradición" />
+      <div class="card-badge badge-green" aria-hidden="true">
+        <img class="leaf2" src="../src/img/leaf.png" alt="" aria-hidden="true" />
+      </div>
+    </div>
+    <div class="card-body">
+      <span class="card-tag tag-arte">Arte y Cultura</span>
+      <h3>Música y Tradición</h3>
+      <p>Recuperación de ritmos folclóricos del NEA. Coro escolar y participación en festivales regionales de Misiones.</p>
+      <a class="card-link" href="#">Ver mas</a>
+    </div>
+  </div>
+
+  <!-- Tarjeta 6 -->
+  <div class="card"
+    data-category="comun"
+    data-title="Biblioteca Comunitaria"
+    data-tag="comun"
+    data-img="../src/img/biblioteca.jpg"
+    data-desc="La biblioteca comunitaria abre sus puertas a todas las familias del paraje. Estudiantes mayores actúan como promotores de lectura y organizan encuentros literarios mensuales. El fondo bibliográfico crece con donaciones y gestiones ante el Ministerio de Educación."
+  >
+    <div class="card-img-wrap">
+      <img class="card-img" src="../src/img/biblioteca.jpg" alt="Biblioteca Comunitaria" />
+      <div class="card-badge badge-red" aria-hidden="true">
+        <img class="leaf2" src="../src/img/leaf.png" alt="" aria-hidden="true" />
+      </div>
+    </div>
+    <div class="card-body">
+      <span class="card-tag tag-comun">Comunidad</span>
+      <h3>Biblioteca Comunitaria</h3>
+      <p>Promotores de lectura, encuentros literarios mensuales y un fondo bibliográfico en crecimiento para todo el paraje.</p>
+      <a class="card-link" href="#">Ver mas</a>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="quote-banner">
+  <h2>"La escuela va a seguir creciendo"</h2>
+  <img class="leaf-svg" src="../src/img/leaf.png" alt="" aria-hidden="true" />
+</div>
+
+
+<footer>
+  <div class="footer-logo">
+    <img src="../src/img/logo.png" alt="Logo Escuela Rural N°940" />
+  </div>
+
+  <div class="footer-info">
+    <p>
+      Aula Satélite "Educación para las Primaveras"<br>
+      CUE: 5400697/02<br>
+      Ruta Provincial 15 km.16 Paraje San Ramón<br>
+      Colonia Primavera, El Soberbio, Misiones<br>
+      E-mail: <a href="mailto:martincorneli@hotmail.com">martincorneli@hotmail.com</a>
+    </p>
+  </div>
+
+  <div class="footer-contact">
+    <h3>Contactos</h3>
+    <div class="social-icons">
+      <a href="#" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a>
+      <a href="#" aria-label="Facebook"><i class="ti ti-brand-facebook"></i></a>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-wrap">
+    <div class="modal">
+      <img class="modal-img" id="modal-img" src="" alt="" />
+      <button class="modal-close" id="modal-close" aria-label="Cerrar">✕</button>
+      <div class="modal-body">
+        <span class="modal-tag" id="modal-tag"></span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-desc"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Script -->
+<script src="../js/proyectos.js"></script>
+
+</body>
+</html>

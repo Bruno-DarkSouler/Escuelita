@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio — Escuela Rural N°940 "Educación para las Primaveras"</title>
+    <meta name="description"
+        content="Bienvenidos a la Escuela Rural N°940 Educación para las Primaveras. Conocé nuestra comunidad, proyectos y propuesta educativa.">
+    <link rel="stylesheet" href="../css/inicio.css">
+</head>
+
+<body>
+
+    <!-- =====================================================================
+         CABECERA (HEADER)
+         ===================================================================== -->
+    <header class="cabecera-inicio">
+        <div class="logo-cabecera">
+            <img src="../src/img/inicio/logoEscuelita.png" alt="Logo Escuela Rural N°940">
+        </div>
+
+        <nav class="enlaces-cabecera">
+        <a href="inicio.html" class="enlace-nav activo">Inicio</a>
+        <a href="galeria.html" class="enlace-nav">Galería</a>
+        <a href="proyectos.html" class="enlace-nav">Proyectos</a>
+        <a href="comunidad.html" class="enlace-nav">Comunidad</a>
+        <a href="#contacto" class="enlace-nav">Contacto</a>
+    </nav>
+
+        <div class="boton-cabecera">
+            <button class="btn-conoce" onclick="document.getElementById('esencia').scrollIntoView({behavior:'smooth'})">
+                Conocé la escuela
+            </button>
+        </div>
+    </header>
+
+    <!-- =====================================================================
+         SECCIÓN HERO
+         ===================================================================== -->
+    <section class="hero-section">
+        <!-- Hojas decorativas -->
+        <img class="hoja-decorativa hoja-top-verde" src="../src/img/inicio/hojaVerdeDecorativa.png" alt="">
+        <img class="hoja-decorativa hoja-mid-marron" src="../src/img/inicio/hojaDecorativa.png" alt="">
+
+        <div class="hero-contenido">
+            <!-- Texto -->
+            <div class="hero-texto">
+                <span class="hero-tagline">ESCUELA RURAL N°940</span>
+
+                <h1 class="hero-titulo">
+                    <span class="txt-alexandria">Educación</span><br>
+                    <span class="txt-dancing-italic">para las Primaveras</span>
+                </h1>
+
+                <p class="hero-slogan">Donde cada niño florece</p>
+
+                <p class="hero-descripcion">
+                    Somos una escuela rural comprometida con brindar una educación de calidad,
+                    integradora y en contacto con la naturaleza. Formamos personas íntegras
+                    capaces de transformar su comunidad.
+                </p>
+
+                <div class="hero-botones">
+                    <button class="btn-solid-red"
+                        onclick="document.getElementById('esencia').scrollIntoView({behavior:'smooth'})">
+                        Conocé más
+                    </button>
+                    <button class="btn-outline-red"
+                        onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">
+                        Contactanos
+                    </button>
+                </div>
+            </div>
+
+            <!-- Collage de fotos -->
+            <div class="hero-collage-wrapper">
+                <img class="foto-collage foto-1" src="../src/img/inicio/imgFirstHero.png" alt="Estudiantes en clase">
+                <img class="foto-collage foto-2" src="../src/img/inicio/imgEscuelitaSeccion.png" alt="Escuela rural">
+                <img class="foto-collage foto-3" src="../src/img/inicio/imgEscuelitaDecoracion.png"
+                    alt="Actividades escolares">
+                <img class="foto-collage foto-4" src="../src/img/inicio/escuelita.png" alt="Comunidad educativa">
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         BANNER DE ESTADÍSTICAS
+         ===================================================================== -->
+    <section class="stats-section">
+        <div class="stats-capsula">
+            <div class="stats-item">
+                <span class="stats-numero">+120</span>
+                <span class="stats-label">Estudiantes</span>
+            </div>
+            <div class="stats-item">
+                <span class="stats-numero">18</span>
+                <span class="stats-label">Docentes</span>
+            </div>
+            <div class="stats-item">
+                <span class="stats-numero">+30</span>
+                <span class="stats-label">Proyectos realizados</span>
+            </div>
+            <div class="stats-item">
+                <span class="stats-numero">+25</span>
+                <span class="stats-label">Años de historia</span>
+            </div>
+            <div class="stats-item">
+                <span class="stats-numero">+50</span>
+                <span class="stats-label">Familias comprometidas</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         SECCIÓN NUESTRA ESENCIA
+         ===================================================================== -->
+    <section class="esencia-section" id="esencia">
+        <!-- Hoja decorativa -->
+        <img class="hoja-decorativa hoja-transicion-marron" src="../src/img/inicio/hojaDecorativa.png" alt="">
+        <img class="hoja-decorativa hoja-esencia-verde" src="../src/img/inicio/hojaVerdeDecorativa.png" alt="">
+
+        <div class="esencia-contenido">
+            <!-- Texto -->
+            <div class="esencia-texto">
+                <span class="esencia-tagline">Nuestra Esencia</span>
+                <h2 class="esencia-titulo">Una escuela que nació del corazón de la comunidad</h2>
+                <p class="esencia-descripcion">
+                    La Escuela Rural N°940 "Educación para las Primaveras" es mucho más que un espacio
+                    de aprendizaje. Es el corazón de nuestra comunidad, un lugar donde las familias,
+                    docentes y estudiantes construyen juntos un futuro mejor.
+                </p>
+                <p class="esencia-descripcion">
+                    Desde nuestros inicios, nos guía el convencimiento de que la educación rural
+                    debe adaptarse al entorno y a las necesidades reales de quienes la habitan,
+                    integrando el amor por la tierra con el conocimiento y los valores.
+                </p>
+                <p class="esencia-firma">— Dirección de la Escuela</p>
+            </div>
+
+            <!-- Imagen -->
+            <div class="esencia-imagen-wrapper">
+                <img class="esencia-imagen" src="../src/img/inicio/imgEscuelitaSeccion.png"
+                    alt="Vista de la escuela y su entorno">
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         SECCIÓN NUESTROS PLANES
+         ===================================================================== -->
+    <section class="planes-section" id="planes">
+        <!-- Hoja decorativa -->
+        <img class="hoja-decorativa hoja-planes-marron" src="../src/img/inicio/hojaDecorativa.png" alt="">
+
+        <h2 class="seccion-titulo-centrado">Nuestros Planes</h2>
+
+        <!-- Grid de planes -->
+        <div class="planes-grid">
+            <div class="plan-card">
+                <h3 class="plan-titulo">Nivel Inicial</h3>
+                <p class="plan-descripcion">Primer acercamiento al mundo educativo en un entorno cálido, seguro y
+                    estimulante para los más pequeños.</p>
+            </div>
+            <div class="plan-card">
+                <h3 class="plan-titulo">Primaria Completa</h3>
+                <p class="plan-descripcion">Formación integral de 1° a 6° grado con énfasis en el aprendizaje
+                    significativo y el pensamiento crítico.</p>
+            </div>
+            <div class="plan-card">
+                <h3 class="plan-titulo">Educación Rural</h3>
+                <p class="plan-descripcion">Adaptamos los contenidos curriculares a la realidad del entorno rural,
+                    valorando sus saberes y tradiciones.</p>
+            </div>
+            <div class="plan-card">
+                <h3 class="plan-titulo">Arte y Cultura</h3>
+                <p class="plan-descripcion">Talleres de expresión artística, música y folclore que enriquecen la
+                    formación integral de cada estudiante.</p>
+            </div>
+            <div class="plan-card">
+                <h3 class="plan-titulo">Deporte y Salud</h3>
+                <p class="plan-descripcion">Actividades físicas y deportivas que promueven la vida saludable, el trabajo
+                    en equipo y los valores.</p>
+            </div>
+            <div class="plan-card">
+                <h3 class="plan-titulo">Tecnología</h3>
+                <p class="plan-descripcion">Incorporamos herramientas digitales y pensamiento computacional para
+                    preparar a los alumnos para el futuro.</p>
+            </div>
+        </div>
+
+        <!-- Línea de Tiempo -->
+        <div class="timeline-contenedor">
+            <div class="timeline-item">
+                <span class="timeline-anio">1998</span>
+                <p class="timeline-texto">Fundación de la escuela con 12 alumnos y 2 docentes</p>
+            </div>
+            <span class="timeline-flecha">→</span>
+            <div class="timeline-item">
+                <span class="timeline-anio">2005</span>
+                <p class="timeline-texto">Ampliación del edificio y apertura del nivel inicial</p>
+            </div>
+            <span class="timeline-flecha">→</span>
+            <div class="timeline-item">
+                <span class="timeline-anio">2012</span>
+                <p class="timeline-texto">Primer proyecto de huerta escolar comunitaria</p>
+            </div>
+            <span class="timeline-flecha">→</span>
+            <div class="timeline-item">
+                <span class="timeline-anio">2018</span>
+                <p class="timeline-texto">Incorporación del laboratorio de tecnología</p>
+            </div>
+            <span class="timeline-flecha">→</span>
+            <div class="timeline-item">
+                <span class="timeline-anio">2024</span>
+                <p class="timeline-texto">Premio nacional a la innovación educativa rural</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         SECCIÓN PROYECTOS QUE TRANSFORMAN
+         ===================================================================== -->
+    <section class="proyectos-section" id="proyectos">
+        <h2 class="seccion-titulo-centrado">Proyectos que Transforman</h2>
+
+        <div class="proyectos-grid">
+            <div class="proyecto-card">
+                <div class="proyecto-img-container">
+                    <img src="../src/img/inicio/imgFirstHero.png" alt="Proyecto Huerta Escolar">
+                </div>
+                <p class="proyecto-texto">Huerta escolar comunitaria: aprendemos cultivando juntos</p>
+            </div>
+            <div class="proyecto-card">
+                <div class="proyecto-img-container">
+                    <img src="../src/img/inicio/imgEscuelitaSeccion.png" alt="Proyecto Arte">
+                </div>
+                <p class="proyecto-texto">Arte y naturaleza: expresión a través del entorno rural</p>
+            </div>
+            <div class="proyecto-card">
+                <div class="proyecto-img-container">
+                    <img src="../src/img/inicio/imgEscuelitaDecoracion.png" alt="Proyecto Lectura">
+                </div>
+                <p class="proyecto-texto">Club de lectura itinerante por los parajes de la zona</p>
+            </div>
+            <div class="proyecto-card">
+                <div class="proyecto-img-container">
+                    <img src="../src/img/inicio/escuelita.png" alt="Proyecto Tecnología">
+                </div>
+                <p class="proyecto-texto">Conectividad digital: la tecnología llega a cada rincón</p>
+            </div>
+            <div class="proyecto-card">
+                <div class="proyecto-img-container">
+                    <img src="../src/img/inicio/imgFirstHero.png" alt="Proyecto Deporte">
+                </div>
+                <p class="proyecto-texto">Torneos interescolares y juegos rurales provinciales</p>
+            </div>
+        </div>
+
+        <div class="proyectos-boton-wrapper">
+            <a href="proyectos.html">
+                <button class="btn-solid-red">Ver todos los proyectos</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         SECCIÓN ASÍ ES NUESTRA COMUNIDAD (GALERÍA)
+         ===================================================================== -->
+    <section class="comunidad-galeria-section" id="galeria">
+        <div class="comunidad-galeria-contenido">
+            <!-- Info -->
+            <div class="comunidad-galeria-info">
+                <h2 class="comunidad-galeria-titulo">Así es nuestra comunidad</h2>
+                <p class="comunidad-galeria-descripcion">
+                    Cada imagen cuenta una historia de esfuerzo, alegría y pertenencia.
+                    Somos una gran familia que trabaja unida para que cada niño tenga
+                    las mejores oportunidades de aprendizaje y crecimiento.
+                </p>
+                <a href="comunidad.html">
+                    <button class="btn-solid-green">Conocé la comunidad</button>
+                </a>
+            </div>
+
+            <!-- Galería de fotos verticales -->
+            <div class="comunidad-galeria-fotos">
+                <div class="foto-vertical-card">
+                    <img src="../src/img/inicio/imgFirstHero.png" alt="Estudiantes en actividad">
+                </div>
+                <div class="foto-vertical-card">
+                    <img src="../src/img/inicio/imgEscuelitaSeccion.png" alt="Escuela exterior">
+                </div>
+                <div class="foto-vertical-card">
+                    <img src="../src/img/inicio/imgEscuelitaDecoracion.png" alt="Actividades comunitarias">
+                </div>
+                <div class="foto-vertical-card">
+                    <img src="../src/img/inicio/escuelita.png" alt="Vida escolar cotidiana">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         SECCIÓN DE CONTACTO
+         ===================================================================== -->
+    <section class="contacto-section" id="contacto">
+        <!-- Hoja decorativa -->
+        <img class="hoja-decorativa hoja-contacto-verde" src="../src/img/inicio/hojaVerdeDecorativa.png" alt="">
+
+        <div class="contacto-contenedor">
+            <!-- Información de contacto -->
+            <div class="contacto-info">
+                <h2 class="contacto-titulo">¿Querés saber más?</h2>
+                <p class="contacto-subtitulo">
+                    Estamos acá para responder todas tus preguntas. Comunicate con nosotros
+                    y un integrante de nuestro equipo te responderá a la brevedad.
+                </p>
+                <ul class="contacto-detalles">
+                    <li>
+                        <span class="contacto-icon">📍</span>
+                        <span>Paraje El Manantial, Ruta Provincial 7, km 42 — Provincia de Buenos Aires</span>
+                    </li>
+                    <li>
+                        <span class="contacto-icon">📞</span>
+                        <span>(02966) 123-4567</span>
+                    </li>
+                    <li>
+                        <span class="contacto-icon">✉️</span>
+                        <span>contacto@escuela940primaveras.edu.ar</span>
+                    </li>
+                    <li>
+                        <span class="contacto-icon">🕐</span>
+                        <span>Lunes a viernes de 8:00 a 16:00 hs</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Formulario -->
+            <div class="contacto-formulario-wrapper">
+                <form class="contacto-formulario" id="form-contacto" novalidate>
+                    <div class="form-fila-doble">
+                        <input type="text" class="form-input" id="input-nombre" name="nombre" placeholder="Tu nombre"
+                            required>
+                        <input type="email" class="form-input" id="input-email" name="email"
+                            placeholder="Tu correo electrónico" required>
+                    </div>
+                    <input type="text" class="form-input" id="input-asunto" name="asunto" placeholder="Asunto" required>
+                    <textarea class="form-textarea" id="input-mensaje" name="mensaje" placeholder="Tu mensaje..."
+                        rows="5" required></textarea>
+                    <div class="form-boton-wrapper">
+                        <button type="submit" class="btn-enviar">Enviar mensaje</button>
+                    </div>
+                </form>
+
+                <!-- Medalla decorativa -->
+                <div class="medalla-contacto-wrapper">
+                    <div class="medalla-bg">
+                        <img class="medalla-img-fondo" src="../src/img/inicio/rectanguloDecorativo.png" alt="">
+                        <div class="medalla-contenido">
+                            <p class="medalla-texto">Premio a la Innovación Educativa Rural 2024</p>
+                            <img class="medalla-mano" src="../src/img/inicio/manoSVG.png" alt="👋">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         PIE DE PÁGINA (FOOTER)
+         ===================================================================== -->
+    <footer class="footer-inicio">
+        <!-- Logo -->
+        <div class="footer-logo">
+            <img src="../src/img/inicio/logoEscuelita.png" alt="Logo Escuela Rural N°940">
+        </div>
+
+        <!-- Columnas de enlaces y redes -->
+        <div class="footer-columnas">
+            <div class="footer-enlaces-seccion">
+                <span class="footer-titulo-col">Navegación</span>
+                <div class="footer-links-grid">
+            <a href="inicio.html">Inicio</a>
+            <a href="galeria.html">Galería</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="comunidad.html">Comunidad</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#planes">Nuestros Planes</a>
+        </div>
+            </div>
+
+            <div class="footer-redes-seccion">
+                <span class="footer-titulo-col">Redes Sociales</span>
+                <div class="footer-redes-iconos">
+                    <a href="#" class="red-social-circulo" aria-label="Facebook">
+                        <span class="icono-placeholder">f</span>
+                    </a>
+                    <a href="#" class="red-social-circulo" aria-label="Instagram">
+                        <span class="icono-placeholder">in</span>
+                    </a>
+                    <a href="#" class="red-social-circulo" aria-label="YouTube">
+                        <span class="icono-placeholder">yt</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slogan -->
+        <div class="footer-slogan">
+            <p class="txt-footer-cursive">Donde cada niño florece</p>
+        </div>
+    </footer>
+
+    <!-- =====================================================================
+         SCRIPTS
+         ===================================================================== -->
+    <script src="../js/inicio.js"></script>
+
+</body>
+
+</html>

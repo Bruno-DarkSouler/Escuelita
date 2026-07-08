@@ -1,0 +1,1216 @@
+/* ==========================================================================
+   ESTILOS ESPECÍFICOS - SECCIÓN INICIO
+   Escuela Rural N°940 "Educación para las Primaveras"
+   ========================================================================== */
+
+/* Importación de fuentes desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Briem+Hand:wght@100..900&family=Dancing+Script:wght@400..700&family=Inter:wght@100..900&display=swap');
+
+/* Variables de Color e Identidad */
+:root {
+    --main-background: #F3EADD;
+    --secGreen: #4B512C;
+    --secRed: #A23719;
+    --footer: #544035;
+
+    /* Variables de Fuentes */
+    --font-alexandria: 'Alexandria', sans-serif;
+    --font-briem: 'Briem Hand', cursive;
+    --font-dancing: 'Dancing Script', cursive;
+    --font-inter: 'Inter', sans-serif;
+    --font-mixed: 'Mixed', sans-serif;
+}
+
+/* Anulación de fondo beige forzado por general.css */
+* {
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+/* Estilos de Cuerpo y Configuración Base */
+body {
+    background-color: var(--main-background);
+    color: #333;
+    font-family: var(--font-inter);
+    overflow-x: hidden;
+    /* Evita barras de desplazamiento horizontal debido a hojas decorativas */
+    min-height: 100vh;
+}
+
+/* ==========================================================================
+   CABECERA (HEADER)
+   ========================================================================== */
+header.cabecera-inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 8%;
+    height: auto;
+    background-color: transparent;
+}
+
+.logo-cabecera {
+    height: 65px;
+}
+
+.logo-cabecera img {
+    height: 100%;
+    width: auto;
+    display: block;
+}
+
+.enlaces-cabecera {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.enlace-nav {
+    font-family: var(--font-inter);
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.enlace-nav:hover {
+    color: var(--secRed);
+}
+
+.enlace-nav.activo {
+    color: var(--secRed);
+    position: relative;
+}
+
+.enlace-nav.activo::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--secRed);
+}
+
+.boton-cabecera {
+    display: flex;
+    align-items: center;
+}
+
+.btn-conoce {
+    background-color: var(--secRed);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 0.7rem 1.8rem;
+    font-family: var(--font-inter);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-conoce:hover {
+    background-color: #852d14;
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   SECCIÓN HERO
+   ========================================================================== */
+.hero-section {
+    padding: 4rem 8% 2rem 8%;
+    position: relative;
+    background-image: url('../src/img/inicio/fondo-hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+.hero-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-texto {
+    width: 50%;
+}
+
+.hero-tagline {
+    font-family: var(--font-inter);
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--secGreen);
+    letter-spacing: 2.5px;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.hero-titulo {
+    line-height: 1.15;
+    margin-bottom: 1rem;
+}
+
+.txt-alexandria {
+    font-family: var(--font-alexandria);
+    font-size: 56px;
+    font-weight: 800;
+    color: #000;
+}
+
+.txt-dancing-italic {
+    font-family: var(--font-dancing);
+    font-size: 52px;
+    font-weight: 400;
+    color: #000;
+}
+
+.hero-slogan {
+    font-family: var(--font-dancing);
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 2rem;
+}
+
+.hero-descripcion {
+    font-family: var(--font-inter);
+    font-size: 15px;
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+    max-width: 480px;
+    font-weight: 500;
+}
+
+.hero-botones {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.btn-solid-red {
+    background-color: var(--secRed);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 0.8rem 2rem;
+    font-family: var(--font-inter);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-solid-red:hover {
+    background-color: #852d14;
+    transform: translateY(-2px);
+}
+
+.btn-outline-red {
+    background-color: transparent;
+    color: var(--secRed);
+    border: 2px solid var(--secRed);
+    border-radius: 25px;
+    padding: 0.8rem 2rem;
+    font-family: var(--font-inter);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-outline-red:hover {
+    background-color: var(--secRed);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Collage del Hero */
+.hero-collage-wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-height: 440px;
+}
+
+.foto-collage {
+    position: absolute;
+    width: 200px;
+    height: 145px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.foto-collage:hover {
+    transform: scale(1.06) !important;
+    z-index: 10 !important;
+}
+
+/* Foto superior izquierda, inclinada a la izquierda */
+.foto-1 {
+    top: 10%;
+    left: 5%;
+    transform: rotate(-8deg);
+    z-index: 2;
+}
+
+/* Foto superior derecha, inclinada a la derecha */
+.foto-2 {
+    top: 5%;
+    right: 5%;
+    transform: rotate(7deg);
+    z-index: 3;
+}
+
+/* Foto inferior izquierda */
+.foto-3 {
+    top: 48%;
+    left: 10%;
+    transform: rotate(5deg);
+    z-index: 1;
+}
+
+/* Foto inferior derecha */
+.foto-4 {
+    top: 45%;
+    right: 2%;
+    transform: rotate(-6deg);
+    z-index: 2;
+}
+
+
+/* ==========================================================================
+   HOJAS DECORATIVAS Y ELEMENTOS FLOTANTES
+   ========================================================================== */
+.hoja-decorativa {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.hoja-top-verde {
+    top: 0px;
+    left: -80px;
+    width: 200px;
+    transform: rotate(15deg);
+    opacity: 0.9;
+}
+
+.hoja-mid-marron {
+    top: 25%;
+    left: -60px;
+    width: 220px;
+    transform: rotate(-10deg);
+    opacity: 0.95;
+}
+
+.hoja-transicion-marron {
+    top: -100px;
+    left: -100px;
+    width: 240px;
+    transform: rotate(-25deg);
+    opacity: 0.95;
+}
+
+.hoja-esencia-verde {
+    bottom: -60px;
+    right: -45px;
+    width: 170px;
+    transform: rotate(-30deg);
+    z-index: 5;
+}
+
+.hoja-planes-marron {
+    bottom: -130px;
+    left: -90px;
+    width: 240px;
+    transform: rotate(15deg);
+}
+
+.hoja-contacto-verde {
+    bottom: -40px;
+    right: -40px;
+    width: 150px;
+    transform: rotate(25deg);
+    z-index: 6;
+}
+
+/* ==========================================================================
+   BANNER DE ESTADÍSTICAS
+   ========================================================================== */
+.stats-section {
+    padding: 2rem 8%;
+    position: relative;
+}
+
+.stats-capsula {
+    background-color: #EADFD0;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.8rem 3rem;
+    margin: 2rem auto;
+    max-width: 1100px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.02);
+}
+
+.stats-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    border-right: 1px solid rgba(84, 64, 53, 0.15);
+}
+
+.stats-item:last-child {
+    border-right: none;
+}
+
+.stats-numero {
+    font-family: var(--font-alexandria);
+    font-size: 30px;
+    font-weight: 800;
+    color: #000;
+    line-height: 1.2;
+}
+
+.stats-label {
+    font-family: var(--font-inter);
+    font-size: 13px;
+    font-weight: 700;
+    color: #544035;
+    margin-top: 0.3rem;
+}
+
+/* ==========================================================================
+   SECCIÓN NUESTRA ESENCIA
+   ========================================================================== */
+.esencia-section {
+    padding: 6rem 8%;
+    position: relative;
+}
+
+.esencia-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.esencia-texto {
+    width: 50%;
+}
+
+.esencia-tagline {
+    font-family: var(--font-inter);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--secGreen);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.esencia-titulo {
+    font-family: var(--font-dancing);
+    font-size: 44px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 1.5rem;
+}
+
+.esencia-descripcion {
+    font-family: var(--font-inter);
+    font-size: 15px;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.esencia-firma {
+    font-family: var(--font-dancing);
+    font-size: 32px;
+    color: var(--secRed);
+    font-weight: 700;
+    margin-top: 1.5rem;
+}
+
+.esencia-imagen-wrapper {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.esencia-imagen {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.esencia-imagen:hover {
+    transform: scale(1.03);
+}
+
+/* ==========================================================================
+   SECCIÓN NUESTROS PLANES
+   ========================================================================== */
+.planes-section {
+    padding: 5rem 8%;
+    position: relative;
+}
+
+.seccion-titulo-centrado {
+    text-align: center;
+    font-family: var(--font-inter);
+    font-size: 36px;
+    font-weight: 850;
+    color: #000;
+    margin-bottom: 3.5rem;
+}
+
+.planes-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    border-top: 1.5px solid rgba(84, 64, 53, 0.2);
+    border-bottom: 1.5px solid rgba(84, 64, 53, 0.2);
+    margin: 3rem 0;
+    padding: 3rem 0;
+    gap: 0;
+}
+
+.plan-card {
+    padding: 0 1.2rem;
+    border-right: 1.5px solid rgba(84, 64, 53, 0.2);
+    text-align: center;
+}
+
+.plan-card:last-child {
+    border-right: none;
+}
+
+.plan-titulo {
+    font-family: var(--font-inter);
+    font-size: 17px;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 0.8rem;
+}
+
+.plan-descripcion {
+    font-family: var(--font-inter);
+    font-size: 13px;
+    color: #444;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+/* Línea de Tiempo */
+.timeline-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 5rem 0 2rem 0;
+    padding: 0 2%;
+}
+
+.timeline-item {
+    text-align: center;
+    flex: 1;
+    max-width: 170px;
+}
+
+.timeline-anio {
+    font-family: var(--font-alexandria);
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--secRed);
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+.timeline-texto {
+    font-family: var(--font-inter);
+    font-size: 13px;
+    color: #444;
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+.timeline-flecha {
+    font-size: 28px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin: 0 0.5rem;
+    opacity: 0.6;
+}
+
+/* ==========================================================================
+   SECCIÓN PROYECTOS QUE TRANSFORMAN
+   ========================================================================== */
+.proyectos-section {
+    padding: 5rem 8%;
+    position: relative;
+}
+
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.proyecto-card {
+    text-align: center;
+}
+
+.proyecto-img-container {
+    width: 100%;
+    height: 170px;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.proyecto-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.proyecto-card:hover .proyecto-img-container img {
+    transform: scale(1.06);
+}
+
+.proyecto-texto {
+    font-family: var(--font-inter);
+    font-size: 13px;
+    color: #333;
+    line-height: 1.6;
+    font-weight: 600;
+    text-align: left;
+    padding: 0 0.2rem;
+}
+
+.proyectos-boton-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+/* ==========================================================================
+   SECCIÓN ASÍ ES NUESTRA COMUNIDAD
+   ========================================================================== */
+.comunidad-galeria-section {
+    padding: 6rem 8%;
+}
+
+.comunidad-galeria-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+.comunidad-galeria-info {
+    width: 32%;
+}
+
+.comunidad-galeria-titulo {
+    font-family: var(--font-inter);
+    font-size: 38px;
+    font-weight: 850;
+    color: #000;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.comunidad-galeria-descripcion {
+    font-family: var(--font-inter);
+    font-size: 15px;
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 2.2rem;
+    font-weight: 500;
+}
+
+.btn-solid-green {
+    background-color: var(--secGreen);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 0.8rem 2.2rem;
+    font-family: var(--font-inter);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-solid-green:hover {
+    background-color: #363b20;
+    transform: translateY(-2px);
+}
+
+.comunidad-galeria-fotos {
+    width: 64%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+    height: 380px;
+}
+
+.foto-vertical-card {
+    border-radius: 24px;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+}
+
+.foto-vertical-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.foto-vertical-card:hover img {
+    transform: scale(1.08);
+}
+
+/* ==========================================================================
+   SECCIÓN DE CONTACTO
+   ========================================================================== */
+.contacto-section {
+    padding: 6rem 8% 8rem 8%;
+    position: relative;
+    background-image: url('../src/img/inicio/formaQuieresSaberMas.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.contacto-contenedor {
+    padding: 4.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    position: relative;
+}
+
+.contacto-info {
+    width: 42%;
+    color: #fff;
+}
+
+.contacto-titulo {
+    font-family: var(--font-inter);
+    font-size: 38px;
+    font-weight: 850;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.contacto-subtitulo {
+    font-family: var(--font-inter);
+    font-size: 15px;
+    line-height: 1.6;
+    color: #fff;
+    opacity: 0.9;
+    margin-bottom: 3rem;
+    font-weight: 500;
+}
+
+.contacto-detalles {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contacto-detalles li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+    margin-bottom: 1.8rem;
+    font-family: var(--font-inter);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.contacto-icon {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.contacto-formulario-wrapper {
+    width: 40%;
+    z-index: 2;
+}
+
+.contacto-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form-fila-doble {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.form-input,
+.form-textarea {
+    background-color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 1.1rem 1.3rem;
+    font-family: var(--font-inter);
+    font-size: 14px;
+    color: #333;
+    width: 100%;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: #888;
+    font-weight: 500;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: 2px solid var(--secGreen);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.form-boton-wrapper {
+    margin-top: 0.5rem;
+    display: flex;
+}
+
+.btn-enviar {
+    background-color: var(--secGreen);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 0.9rem 2.2rem;
+    font-family: var(--font-inter);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #363b20;
+    transform: translateY(-2px);
+}
+
+/* Medalla dorada superpuesta a la derecha */
+.medalla-contacto-wrapper {
+    position: absolute;
+    right: -85px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 230px;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.medalla-bg {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.medalla-img-fondo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.medalla-contenido {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.2rem;
+    text-align: center;
+}
+
+.medalla-texto {
+    font-family: var(--font-dancing);
+    font-size: 18px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.35;
+    margin-bottom: 0.6rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.medalla-mano {
+    width: 48px;
+    height: auto;
+}
+
+/* ==========================================================================
+   PIE DE PÁGINA (FOOTER)
+   ========================================================================== */
+footer.footer-inicio {
+    background-color: var(--footer);
+    padding: 5rem 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-logo {
+    width: 22%;
+}
+
+.footer-logo img {
+    max-width: 160px;
+    height: auto;
+    display: block;
+    /* Inversión de color a blanco para visualización óptima sobre marrón */
+    filter: brightness(0) invert(1);
+}
+
+.footer-columnas {
+    display: flex;
+    gap: 5rem;
+    width: 53%;
+}
+
+.footer-enlaces-seccion,
+.footer-redes-seccion {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.footer-titulo-col {
+    font-family: var(--font-inter);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #fff;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.15);
+    padding-bottom: 0.5rem;
+}
+
+.footer-links-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem 2.5rem;
+}
+
+.footer-links-grid a {
+    font-family: var(--font-inter);
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links-grid a:hover {
+    color: #f7e7d4;
+}
+
+.footer-redes-iconos {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.red-social-circulo {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.red-social-circulo:hover {
+    transform: scale(1.1);
+    background-color: #f7e7d4;
+}
+
+.icono-placeholder {
+    color: var(--footer);
+    font-family: var(--font-inter);
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.footer-slogan {
+    width: 25%;
+    text-align: right;
+}
+
+.txt-footer-cursive {
+    font-family: var(--font-dancing);
+    font-size: 26px;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* ==========================================================================
+   DISEÑO RESPONSIVO (RESPONSIVE DESIGN)
+   ========================================================================== */
+@media (max-width: 1024px) {
+
+    .hero-contenido,
+    .esencia-contenido,
+    .comunidad-galeria-contenido {
+        flex-direction: column;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .hero-texto,
+    .hero-collage-wrapper,
+    .esencia-texto,
+    .esencia-imagen-wrapper,
+    .comunidad-galeria-info,
+    .comunidad-galeria-fotos {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .hero-descripcion {
+        margin: 0 auto 2.5rem auto;
+    }
+
+    .hero-botones {
+        justify-content: center;
+    }
+
+    .planes-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem 0;
+    }
+
+    .plan-card:nth-child(3),
+    .plan-card:nth-child(6) {
+        border-right: none;
+    }
+
+    .timeline-contenedor {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .timeline-flecha {
+        transform: rotate(90deg);
+        margin: 0.5rem 0;
+    }
+
+    .proyectos-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contacto-contenedor {
+        flex-direction: column;
+        padding: 4rem 3rem;
+    }
+
+    .contacto-info,
+    .contacto-formulario-wrapper {
+        width: 100%;
+    }
+
+    .medalla-contacto-wrapper {
+        position: relative;
+        right: 0;
+        top: 0;
+        transform: none;
+        margin: 2rem auto 0 auto;
+        pointer-events: auto;
+    }
+
+    footer.footer-inicio {
+        flex-direction: column;
+        text-align: center;
+        gap: 2.5rem;
+    }
+
+    .footer-logo,
+    .footer-columnas,
+    .footer-slogan {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer-logo img {
+        margin: 0 auto;
+    }
+
+    .footer-columnas {
+        gap: 3rem;
+    }
+
+    .footer-slogan {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .planes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .plan-card {
+        border-right: none;
+        padding: 1rem;
+    }
+
+    .plan-card:nth-child(odd) {
+        border-right: 1.5px solid rgba(84, 64, 53, 0.2);
+    }
+
+    .proyectos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .comunidad-galeria-fotos {
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+        grid-auto-rows: 250px;
+    }
+
+    .cabecera-inicio {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .enlaces-cabecera {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .txt-alexandria {
+        font-size: 42px;
+    }
+
+    .txt-dancing-italic {
+        font-size: 38px;
+    }
+
+    .hero-collage-bg {
+        width: 280px;
+        height: 320px;
+        border-radius: 90px 0 90px 0;
+    }
+
+    .foto-collage {
+        width: 160px;
+        height: 120px;
+    }
+
+    .foto-1 {
+        right: -10px;
+    }
+
+    .foto-2 {
+        left: -15px;
+    }
+
+    .foto-3 {
+        right: -10px;
+    }
+
+    .stats-capsula {
+        flex-direction: column;
+        border-radius: 30px;
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+
+    .stats-item {
+        border-right: none;
+        border-bottom: 1px solid rgba(84, 64, 53, 0.15);
+        padding-bottom: 1rem;
+    }
+
+    .stats-item:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .planes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .plan-card {
+        border-right: none !important;
+        border-bottom: 1.5px solid rgba(84, 64, 53, 0.2);
+        padding: 1.5rem 0;
+    }
+
+    .plan-card:last-child {
+        border-bottom: none;
+    }
+
+    .proyectos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .comunidad-galeria-fotos {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 300px;
+    }
+
+    .form-fila-doble {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .footer-columnas {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
